@@ -4,40 +4,6 @@ from camera_opencv import Camera
 
 app = Flask(__name__)
 
-control_json = [
-    {
-        "id": 1,
-        "cmd": "run",
-        "description": "control device run",
-        "url_method":"post",
-        "url_path":"xxxx//todo/api/v1/control/run",
-        "url_param": "speed:,times",
-        "url_param_type":"json",
-        "url_param_demo":"{\"speed\":100,\"times\":5}"
-    },
-    {
-        "id": 2,
-        "cmd": "back",
-        "description": "control device back",
-        "url_method":"post",
-        "url_path":"xxxx//todo/api/v1/control/back",
-        "url_param": "speed:,times",
-        "url_param_type":"json",
-        "url_param_demo":"{\"speed\":100,\"times\":5}"
-    },
-    {
-        "id": 3,
-        "cmd": "stop",
-        "description": "control device stop",
-        "url_method":"post",
-        "url_path":"xxxx//todo/api/v1/control/stop",
-        "url_param": "None",
-        "url_param_type":"json",
-        "url_param_demo":""
-    }
-]
-
-
 @app.route('/')
 def index():
     """Video streaming home page."""
